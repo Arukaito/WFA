@@ -1,6 +1,6 @@
 ﻿namespace WFA
 {
-    partial class Form1
+    partial class SuperA
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,6 @@
             this.lblGold = new System.Windows.Forms.Label();
             this.lblExperience = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.btnTest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,21 +112,11 @@
             this.lblLevel.TabIndex = 7;
             this.lblLevel.Text = "label8";
             // 
-            // btnTest
-            // 
-            this.btnTest.Location = new System.Drawing.Point(275, 274);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(147, 39);
-            this.btnTest.TabIndex = 8;
-            this.btnTest.Text = "Test";
-            this.btnTest.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 652);
-            this.Controls.Add(this.btnTest);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lblExperience);
             this.Controls.Add(this.lblGold);
@@ -138,6 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "MAG";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,7 +143,6 @@
         private System.Windows.Forms.Label lblGold;
         private System.Windows.Forms.Label lblExperience;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Button btnTest;
     }
 }
 
